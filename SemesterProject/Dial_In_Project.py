@@ -14,6 +14,8 @@ MDScreen:
         text: "Press Here"
         text_color: 0, 1, 0, 1
         pos_hint: {"center_x": 0.5, "center_y": 0.5}
+        on_press: print("abcd")
+        
 
 '''
 
@@ -22,6 +24,7 @@ class app(MDApp):
         Window.size = (375,812)
 
         return Builder.load_string(BUT_1)
+
 
 
 
